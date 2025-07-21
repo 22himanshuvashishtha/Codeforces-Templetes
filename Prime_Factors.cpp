@@ -9,6 +9,7 @@ void solve() {
     vector<int>fact;
     for(int i=2;i*i<=n;i++){
       if(n%i==0){
+          // You can remove this while loop if u want to put 1 value at 1 time only .
         while(n%i==0){
           fact.push_back(i);
           n/=i;  
